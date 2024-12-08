@@ -1,0 +1,344 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    /* Header */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    header .logo {
+      display: inline-block;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    header nav {
+      display: inline-block;
+      float: right;
+    }
+
+    header nav ul {
+      list-style: none;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    /* Sections */
+    .section {
+      padding: 40px 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* About Section */
+    #about .about-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #about .profile-img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    #about p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    /* Social Media Icons */
+    #about .social-links {
+      margin-top: 20px;
+    }
+
+    #about .social-links a {
+      margin-right: 15px;
+      color: #333;
+      text-decoration: none;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    #about .social-links a:hover {
+      color: #0073e6;
+    }
+
+    /* Skills Section */
+    #skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #skills ul li {
+      background-color: #333;
+      color: #fff;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    /* Experience Section */
+    #experience .job {
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #experience .job h3 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    #experience .job p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    /* Education Section */
+    #education .school {
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #education .school h3 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    #education .school p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    /* Achievements Section */
+    #achievements ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #achievements ul li {
+      background-color: #505b6e;
+      color: white;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    /* Contact Section */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form label {
+      margin-bottom: 5px;
+      font-size: 1rem;
+    }
+
+    form input,
+    form textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      padding: 10px 15px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo"><i>BUDDARAJU JASHWANTH</i></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="https://themost.com.tr/wp-content/uploads/2023/04/tm-men1_0001_TM-MEN3.jpg" alt="Profile Picture" class="profile-img">
+        <p><em>My name is BUDDARAJU JASHWANTH, and I am Currently a Second-year B.Tech Student at Malla Reddy College Of Engineering, Pursuing a Degree in Computer Science Engineering.
+		I am Passionate about Technology, Coding, Innovation and I am constantly looking to Expand My Knowledge and skills in these Areas. 
+		I have developed a strong foundation in  programming languages, problem-solving, teamwork, and I am eager to apply these skills in real-world projects.
+		 I have experience in HTML, CSS, JavaScript, and more. I am always eager to learn new technologies and improve my skills.</em></p>
+      </div>
+      <div class="social-links">
+        <h3>Connect with me:</h3>
+        <a href="https://www.instagram.com/jashwanth_varma_2/profilecard/?igsh=MXhxZGJ6ZjlsbHlxdw==" target="_blank" title="Instagram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100081157440312&mibextid=ZbWKwL" target="_blank" title="Facebook">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Frontend Developer | AICTU Company</h3>
+        <p>July 2024 - Present</p>
+        <p>Developed and maintained responsive websites using HTML, CSS, and JavaScript. Collaborated with designers to implement UI/UX improvements and improved the performance of client-side applications.</p>
+      </div>
+      <div class="job">
+        <h3>Intern | EXCELR Technologies</h3>
+        <p>June 2023 - June 2024</p>
+        <p>Assisted in the development of web applications, worked on bug fixes, and gained hands-on experience in coding with JavaScript, React, and Node.js.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="school">
+        <h3>Bachelor's in Computer Science</h3>
+        <p>malla reddy college of engineering  | 2023 </p>
+        <p>Learned the fundamentals of computer science, including programming, data structures, algorithms, and web development. Participated in coding competitions and workshops.</p>
+      </div>
+	  <div class="school">
+        <h3> High School</h3>
+        <p>sri gayatri junior college | 2021-2023</p>
+        <p>Graduated with honors, excelling in mathematics, computer science, and physics.</p>
+      </div>
+      <div class="school">
+        <h3>School</h3>
+        <p>vd prasad rao memoral high school | 2020</p>
+        <p>Graduated with honors, excelling in mathematics, physics , chemistry , soical etc....</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2>Achievements</h2>
+      <ul>
+        <li>RUNNER of BLIND CODING Competition 2024</li>
+        <li>Certified For EXCEL BASICS FOR DATA ANALYSIS BY IBM (Coursera, 2024)</li>
+        <li>Completed 10+ projects on GitHub</li>
+        <li>PLACEMENT COORDINATOR</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch, feel free to reach out!</p>
+      <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 [BUDDARAJU JASHWANTH]. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
